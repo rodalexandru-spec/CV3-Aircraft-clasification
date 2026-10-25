@@ -1,0 +1,29 @@
+cd /home/mario/CV3
+
+cat > .gitignore <<'EOF'
+# Dataset and archives
+/dataset/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Windows metadata
+*:Zone.Identifier
+
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Trained model weights
+*.pt
+*.pth
+*.ckpt
+
+# Local secrets
+.env
+.env.*
+EOF
